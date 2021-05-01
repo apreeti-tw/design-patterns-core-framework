@@ -1,0 +1,11 @@
+pipeline{
+    agent any
+
+    stages{
+        stage ('deploy-core-jar'){
+             steps{
+                sh "mvn deploy"
+             }
+        }
+    }
+}
